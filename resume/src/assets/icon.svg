@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- White rounded square background -->
+  <rect x="20" y="20" width="160" height="160" rx="30" ry="30" fill="white"/>
+  
+  <!-- Black bold Chinese character 尺 -->
+  <text x="100" y="130" font-size="100" font-weight="900" text-anchor="middle" fill="black" font-family="Arial, sans-serif">尺</text>
+</svg>

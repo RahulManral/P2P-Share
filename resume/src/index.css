@@ -1,0 +1,94 @@
+/* Import Google Font FIRST - before Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Alternative fonts (uncomment to use): */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
+
+/* Then import Tailwind */
+@import "tailwindcss";
+
+/* Configure font in @theme */
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
+  
+  /* For alternative fonts: */
+  /* --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif; */
+  /* --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif; */
+  /* --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif; */
+
+  
+  --breakpoint-xs: 20rem;
+  --breakpoint-3xl: 120rem;
+
+
+  
+}
+
+
+
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Animation delays */
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Fade-in animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fade-in 0.8s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-4 {
+  animation: fade-in 0.8s ease-out 0.4s both;
+}
+
+.animate-fade-in-delay-5 {
+  animation: fade-in 0.8s ease-out 0.5s both;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch;
+}
+
+
